@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!-- description.html - Description du projet Lemmings - 2024-06 -->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Description du projet Lemmings - C++ et SFML." />
+    <title>Lemmings - Description</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body class="block--dark ">
+
+    <!-- le menu -->
+    <nav class="nav collapsible">
+        <a class="nav__brand" href="index.html"><img src="./img/logo.png" alt="logo de lemmings" /></a>
+        <svg class="icon icon--white nav__toggler">
+            <use xlink:href="img/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+            <li class="nav__item"><a href="./description.html">Projet</a></li>
+            <li class="nav__item"><a href="./jeu.html">Gameplay</a></li>
+            <li class="nav__item"><a href="./index.html#propos">À propos</a></li>
+            <li class="nav__item"><a href="./contact.html">Nous contacter</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero de la page -->
+    <section class="block block--dark block--skewed-left">
+        <div class="container">
+            <header class="block__header">
+                <h1 class="block__heading" data-aos="zoom-in-up">Description du projet</h1>
+                <p>Tout ce que vous devez savoir sur notre implémentation du jeu Lemmings.</p>
+            </header>
+        </div>
+    </section>
+
+    <!-- C'est quoi Lemmings ? -->
+    <section class="block container" data-aos="fade-up">
+        <div class="grid grid--1x2">
+            <div>
+                <h2 data-aos="fade-right">C'est quoi Lemmings ?</h2>
+                <p data-aos="fade-up">Lemmings est un jeu vidéo de réflexion et de stratégie créé en
+                    <strong>1991</strong>. Le joueur doit
+                    guider une troupe de petits personnages (les lemmings) vers une sortie en leur assignant des actions
+                    spéciales.</p>
+                <p data-aos="fade-up">Notre version est une <strong>réimplémentation en C++ avec la bibliothèque
+                        SFML</strong>, réalisée
+                    dans le cadre d'un projet universitaire. Nous avons ajouté deux intelligences artificielles pour
+                    jouer automatiquement.</p>
+            </div>
+            <div class="card card--primary">
+                <div class="card__body">
+                    <img src="img/lem.png" class="feature__image" alt="screenshot du jeu lemmings" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objectif du projet -->
+    <section class="block container">
+        <div class="container">
+            <header class="block__header">
+                <h2 data-aos="fade-right">Objectif du projet</h2>
+                <p data-aos="fade-up">Ce projet a été réalisé dans le cadre de notre formation universitaire en
+                    informatique.</p>
+            </header>
+            <div class="grid grid--1x3">
+                <div class="card card--secondary">
+                    <div class="card__body">
+                        <h3 class="plan__name" data-aos="fade-up">⚙️ Architecture</h3>
+                        <p data-aos="fade-up">Concevoir une architecture logicielle propre et modulaire en C++.</p>
+                    </div>
+                </div>
+                <div class="card card--primary">
+                    <div class="card__body">
+                        <h3 class="plan__name" data-aos="fade-up"> 🧠Intelligence Artificielle</h3>
+                        <p data-aos="fade-up">Implémenter deux IA : une aléatoire et une guidée.</p>
+                    </div>
+                </div>
+                <div class="card card--secondary">
+                    <div class="card__body">
+                        <h3 class="plan__name" data-aos="fade-up">🖥️ Interface graphique</h3>
+                        <p data-aos="fade-up">Créer un affichage fluide et interactif avec la bibliothèque SFML.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Les fonctionnalités -->
+    <section class="block container">
+        <header class="block__header">
+            <h2 data-aos="fade-right">Les fonctionnalités</h2>
+            <p data-aos="fade-up">Voici ce que nous avons implémenté dans notre version du jeu.</p>
+        </header>
+
+        <!-- Fonctionnalité 1 -->
+        <div class="grid grid--1x2">
+            <div>
+                <h3 data-aos="fade-up">🧠 IA Monte-Carlo</h3>
+                <p data-aos="fade-up">L'algorithme Monte-Carlo simule des milliers de parties pour choisir la meilleure
+                    action à effectuer.
+                    Cette IA prend des décisions intelligentes basées sur les probabilités de succès.</p>
+            </div>
+            <div class="card card--secondary">
+                <div class="card__body">
+
+                    <p>Simulation de parties<br>
+                        Sélection de la meilleure action<br>
+                        Apprentissage par exploration<br>
+                        Optimisation du score</p>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Fonctionnalité 2 -->
+        <div class="grid grid--1x2">
+            <div class="card card--secondary">
+                <div class="card__body">
+
+                    <p> Actions assignées au hasard<br>
+                        Simple et rapide<br>
+                        Sert de référence de comparaison<br>
+                        Base pour tester le moteur</p>
+
+                </div>
+            </div>
+            <div>
+                <h3 data-aos="fade-up">🎲 IA Aléatoire</h3>
+                <p data-aos="fade-up"> L'IA aléatoire assigne des actions de manière aléatoire aux lemmings. Elle sert
+                    de base de
+                    comparaison pour évaluer l'efficacité de l'IA Monte-Carlo.</p>
+            </div>
+        </div>
+
+        <!-- Fonctionnalité 3 -->
+        <div class="grid grid--1x2">
+            <div>
+                <h3 data-aos="fade-up">🖥️ Affichage SFML</h3>
+                <p data-aos="fade-up">L'interface graphique est entièrement réalisée avec SFML. Les lemmings se
+                    déplacent en temps réel,
+                    les animations sont fluides et l'interface est claire et lisible.</p>
+            </div>
+            <div class="card card--secondary">
+                <div class="card__body">
+
+                    <p data-aos="fade-up">Rendu en temps réel<br>
+                        Animations des lemmings<br>
+                        Affichage de la grille<br>
+                        Interface utilisateur claire</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Callout -->
+    <div class="container">
+        <div class="callout callout--primary callout-signup">
+            <div class="grid grid--1x2">
+                <div class="callout__content">
+                    <h2 class="callout__heading" data-aos="fade-up">Prêt à jouer ?</h2>
+                    <p data-aos="fade-up">Guidez vos lemmings vers la sortie et relevez le défi !</p>
+                </div>
+                <a href="https://github.com/SARADEV671/lemmings_sara_roukaya" class="btn btn--secondary btn--stretched"
+                    data-aos="fade-up">Voir le jeu</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="block block--dark footer">
+        <div class="container grid footer__sections">
+
+            <section class="collapsible collapsible--expanded footer__section">
+                <header class="collapsible__header">
+                    <h2 class="collapsible__heading footer__heading">Le Jeu</h2>
+                    <svg class="icon icon--white collapsible__chevron">
+                        <use xlink:href="images/sprite.svg#chevron"></use>
+                    </svg>
+                </header>
+                <div class="collapsible__content">
+                    <ul class="list">
+                        <li><a href="description.html">Description</a></li>
+                        <li><a href="lejeu.html">Comment jouer</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="collapsible footer__section">
+                <header class="collapsible__header">
+                    <h2 class="collapsible__heading footer__heading">Technique</h2>
+                    <svg class="icon icon--white collapsible__chevron">
+                        <use xlink:href="images/sprite.svg#chevron"></use>
+                    </svg>
+                </header>
+                <div class="collapsible__content">
+                    <ul class="list">
+                        <li><a href="#">C++ & SFML</a></li>
+                        <li><a href="#">Architecture</a></li>
+                        <li><a href="#">IA Monte-Carlo</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="collapsible footer__section">
+                <header class="collapsible__header">
+                    <h2 class="collapsible__heading footer__heading">Équipe</h2>
+                    <svg class="icon icon--white collapsible__chevron">
+                        <use xlink:href="images/sprite.svg#chevron"></use>
+                    </svg>
+                </header>
+                <div class="collapsible__content">
+                    <ul class="list">
+                        <li><a href="#">Sara</a></li>
+                        <li><a href="#">Rokaya</a></li>
+                        <li><a href="contact.html">Nous contacter</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="footer__brand">
+                <img src="img/logo.png" alt="logo lemmings" />
+                <p class="footer__copyright">Copyright 2026 Sara & Rokaya — Made with ❤️</p>
+            </section>
+
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

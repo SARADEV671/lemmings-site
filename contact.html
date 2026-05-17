@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!--  - Nous contacter - 2024-06 -->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lemmings - Nous contacter</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+    <!-- le menu -->
+    <nav class="nav collapsible">
+        <a class="nav__brand" href="index.html"><img src="./img/logo.png" alt="logo de lemmings" /></a>
+        <svg class="icon icon--white nav__toggler">
+            <use xlink:href="img/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+            <li class="nav__item"><a href="./description.html">Projet</a></li>
+            <li class="nav__item"><a href="./jeu.html">Gameplay</a></li>
+            <li class="nav__item"><a href="./index.html#propos">À propos</a></li>
+            <li class="nav__item"><a href="./contact.html">Nous contacter</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section class="block block--dark block--skewed-left">
+        <div class="container">
+            <header class="block__header">
+                <h1 class="block__heading" data-aos="fade-right">Nous contacter</h1>
+                <p data-aos="fade-up">Une question sur le projet ? Écrivez-nous !</p>
+            </header>
+        </div>
+    </section>
+
+    <!-- Formulaire -->
+    <section class="block container">
+        <div class="grid grid--1x2">
+
+            <!-- Infos contact -->
+            <div>
+                <h2 data-aos="fade-up">On vous répond !</h2>
+                <p data-aos="fade-up">Vous avez une question sur le projet, une suggestion ou vous voulez collaborer ?
+                    N'hésitez pas à nous
+                    écrire.</p>
+
+
+            </div>
+
+            <!-- Formulaire -->
+            <div>
+                <form action="https://formspree.io/f/mgodgoeg" method="POST"
+                    style="display:flex; flex-direction:column; gap:2rem;">
+                    <div>
+                        <label
+                            style="display:block; color:var(--color-headings); font-weight:600; margin-bottom:0.5rem;">Nom</label>
+                        <input class="input" name="nom" type="text" placeholder="Votre nom" style="width:100%;" />
+                    </div>
+                    <div>
+                        <label
+                            style="display:block; color:var(--color-headings); font-weight:600; margin-bottom:0.5rem;">Email</label>
+                        <input class="input" name="email" type="email" placeholder="Votre email" style="width:100%;" />
+                    </div>
+                    <div>
+                        <label
+                            style="display:block; color:var(--color-headings); font-weight:600; margin-bottom:0.5rem;">Message</label>
+                        <textarea class="input" name="message" placeholder="Votre message..."
+                            style="width:100%; height:150px; resize:vertical;"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--accent btn--block">Envoyer</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="block block--dark footer">
+        <div class="container grid footer__sections">
+
+            <section class="collapsible collapsible--expanded footer__section">
+                <header class="collapsible__header">
+                    <h2 class="collapsible__heading footer__heading">Le Jeu</h2>
+                    <svg class="icon icon--white collapsible__chevron">
+                        <use xlink:href="img/sprite.svg#chevron"></use>
+                    </svg>
+                </header>
+                <div class="collapsible__content">
+                    <ul class="list">
+                        <li><a href="./description.html">Description</a></li>
+                        <li><a href="./jeu.html">Comment jouer</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="collapsible footer__section">
+                <header class="collapsible__header">
+                    <h2 class="collapsible__heading footer__heading">Technique</h2>
+                    <svg class="icon icon--white collapsible__chevron">
+                        <use xlink:href="img/sprite.svg#chevron"></use>
+                    </svg>
+                </header>
+                <div class="collapsible__content">
+                    <ul class="list">
+                        <li><a href="#">C++ & SFML</a></li>
+                        <li><a href="#">Architecture</a></li>
+                        <li><a href="#">IA Monte-Carlo</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="collapsible footer__section">
+                <header class="collapsible__header">
+                    <h2 class="collapsible__heading footer__heading">Équipe</h2>
+                    <svg class="icon icon--white collapsible__chevron">
+                        <use xlink:href="images/sprite.svg#chevron"></use>
+                    </svg>
+                </header>
+                <div class="collapsible__content">
+                    <ul class="list">
+                        <li><a href="#">Sara</a></li>
+                        <li><a href="#">Rokaya</a></li>
+                        <li><a href="contact.html">Nous contacter</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="footer__brand">
+                <img src="img/logo.png" alt="logo lemmings" />
+                <p class="footer__copyright">Copyright 2026 Sara & Rokaya — Made with ❤️</p>
+            </section>
+
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
